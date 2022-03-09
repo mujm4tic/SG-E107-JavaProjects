@@ -1,8 +1,7 @@
 # Sparta Global SDET - Engineering 107
 
----
 
-## Things to include here later:
+## Things to include here later
 
 Project dependencies
 Test coverage
@@ -10,7 +9,7 @@ Examples of code running with screenshots
 Generally, just explain the repository
 
 
-### My First ReadMe edits:
+### My First ReadMe edits
 
 Tpying from the cmd line with cat > file
 I just discovered that you save with crtl + D
