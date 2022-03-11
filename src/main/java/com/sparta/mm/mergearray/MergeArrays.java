@@ -10,17 +10,34 @@ public class MergeArrays {
         newArray = new int[length];
         int positionArray2 = 0;
         int positionArray1 = 0;
-
-        for (int i = 0; i < newArray.length; i++) {
+        int positionNewArray = 0;
+        for (int i = positionNewArray; i < newArray.length; i++) {
             if (array1[positionArray1] <= array2[positionArray2]) {
                 newArray[i] = array1[positionArray1];
-                positionArray1++;
-            } else {
+                if (positionArray1 < array1.length - 1) {
+                    positionArray1++;
+                } else {
+                    positionNewArray = i;
+                    break;
+                }
+            } else if (array2[positionArray2] <= array1[positionArray1]) {
                 newArray[i] = array2[positionArray2];
-                positionArray2++;
+                if (positionArray2 < array2.length - 1) {
+                    positionArray2++;
+                } else {
+                    positionNewArray = i;
+                    break;
+                }
             }
-            Arrays.toString(newArray);
-
+        }
+        for (int j = positionNewArray; j < newArray.length; j++) {
+            if (positionArray1 < array1.length - 1) {
+                newArray[j] = array1[positionArray1];
+                positionArray1++;
+            } else if (positionArray2 < array2.length - 1) {
+                newArray[j] = array2[positionArray2];
+                positionArray2++;
+            } else break;
         }
         return newArray;
     }
