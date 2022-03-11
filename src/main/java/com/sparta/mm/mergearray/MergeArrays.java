@@ -31,10 +31,10 @@ public class MergeArrays {
             }
         }
         for (int j = positionNewArray; j < newArray.length; j++) {
-            if (positionArray1 < array1.length - 1) {
+            if (positionArray1 < array1.length) {
                 newArray[j] = array1[positionArray1];
                 positionArray1++;
-            } else if (positionArray2 < array2.length - 1) {
+            } else if (positionArray2 < array2.length) {
                 newArray[j] = array2[positionArray2];
                 positionArray2++;
             } else break;
@@ -42,23 +42,3 @@ public class MergeArrays {
         return newArray;
     }
 }
-
-//
-//    int[] newArray = new int[array1.length + array2.length];
-//    //stopper as any point
-//    boolean stop = false;
-//    int j = 0;
-//    int position = 0;
-//        while(stop){
-//                stop = true
-//                for(int i = 0; i < array1.length-1; i++){
-//        if(array1[i] <= array2[j]){
-//        newArray[position] = array1[i];
-//        position = position++;
-//        stop = false;
-//        } else{
-//        newArray[j] = array2[]
-//        stop = false
-//        }
-//        }
-//        }

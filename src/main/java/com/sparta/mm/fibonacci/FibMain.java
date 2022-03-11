@@ -10,3 +10,8 @@ public class FibMain {
         }
     }
 }
+
+/**based on colleague advice
+ * not working after modification - fix
+ * work through logic again
+ */
