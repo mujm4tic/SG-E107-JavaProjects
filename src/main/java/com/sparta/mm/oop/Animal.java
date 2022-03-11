@@ -1,4 +1,4 @@
-package com.sparta.mm;
+package com.sparta.mm.oop;
 
 public abstract class Animal {
     private String name;

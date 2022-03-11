@@ -1,4 +1,4 @@
-package com.sparta.mm;
+package com.sparta.mm.oop;
 
 public class App {
     public static void main(String[] args){
