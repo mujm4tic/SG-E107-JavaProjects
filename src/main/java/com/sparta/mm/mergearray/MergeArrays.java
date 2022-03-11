@@ -4,20 +4,24 @@ import java.util.Arrays;
 
 public class MergeArrays {
 
-    public static int[] mergeArrays (int[] array1, int[] array2){
+    public static int[] mergeA(int[] array1, int[] array2) {
         int length = array1.length + array2.length;
-        int[] newArray = new int[length];
-        int position = 0;
-        for (int i : array1){
-            newArray[position] = i;
-            position++;
-        }
-        for (int j : array2){
-            newArray[position] = j;
-            position++;
+        int[] newArray;
+        newArray = new int[length];
+        int positionArray2 = 0;
+        int positionArray1 = 0;
+
+        for (int i = 0; i < newArray.length; i++) {
+            if (array1[positionArray1] <= array2[positionArray2]) {
+                newArray[i] = array1[positionArray1];
+                positionArray1++;
+            } else {
+                newArray[i] = array2[positionArray2];
+                positionArray2++;
+            }
+            Arrays.toString(newArray);
 
         }
-        Arrays.toString(newArray);
         return newArray;
     }
 }
