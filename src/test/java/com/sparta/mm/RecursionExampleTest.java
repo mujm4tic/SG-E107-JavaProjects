@@ -1,6 +1,6 @@
 package com.sparta.mm;
 
-import com.sparta.mm.fibonacci.RecursionExample;
+import com.sparta.mm.week1.fibonacci.RecursionExample;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
