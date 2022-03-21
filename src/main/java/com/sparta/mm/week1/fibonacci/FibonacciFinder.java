@@ -1,7 +1,6 @@
 package com.sparta.mm.week1.fibonacci;
 
 public class FibonacciFinder {
-    private static
 
     public static void main(String[] args) {
         int n = 35;
