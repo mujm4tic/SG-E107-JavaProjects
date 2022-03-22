@@ -2,12 +2,7 @@ package com.sparta.mm.week1.fibonacci;
 
 public class FibonacciFinder {
 
-    public static void main(String[] args) {
-        int n = 35;
-        System.out.println(fibonacci(n));
-    }
-
-    private static long fibonacci(int n) {
+    public static long fibonacci(int n) {
         if (n<= 1){
             return n;
         }
