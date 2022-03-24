@@ -1,26 +1,23 @@
 package com.sparta.mm.week2.exceptions;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 public class ExceptionExample {
-
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new FileReader("This is my file"));
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("This is my file"));
+        } catch (FileNotFoundException | ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        } finally {
+            System.out.print("I am in the finally block");
+        }
     }
+}
 
-//    public static void main(String[] args) {
-//        System.out.println(arrayChecker(new int[]{1,2,3,4,5}, 8));
-//    }
-//
-//    private static boolean arrayChecker(int[] array, int position) throws ArrayIndexOutOfBoundsException{
+// UNCHECKED
+//    arrayChecker (new int[]{1,2,3,4}, 10);
+//    private static int arrayChecker(int[] array, int position) throws ArrayIndexOutOfBoundsException{
 //        return array[position];
 //    }
-
-//    public static void main(String[] args){
-//        int[] numbers = new int[]{1,2,3,4};
-//
-//        try {
-//            System.out.println(numbers[10]);
-//        } catch (ArrayIndexOutOfBoundsException e) {
-//            e.printStackTrace();
-//        }
-//    }
-}
